@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carga de Notas</title>
+    <link rel="stylesheet" href="CSS/CargadodeNotas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="IMGS/pngCG.png" alt="Logo" class="logo-img">
+                <h2>Cargado de notas</h2>
+            </div>
+            <div class="user-info">
+                <span>Llauca, Estefania</span>
+            </div>
+            <div class="icons-container">
+                <i class="fas fa-bell" id="bell-icon"></i>
+                <i class="fas fa-user" id="user-icon"></i>
+            </div>
+        </div>
+    </header>
+
+     <!-- Menú de notificaciones -->
+     <div class="notification-menu" id="notification-menu">
+        <div class="notification-item">No tienes nuevas notificaciones.</div>
+    </div>
+
+    <!-- Menú del usuario -->
+    <div class="user-menu" id="user-menu">
+        <a href="http://127.0.0.1:3000/BoletinesDigitales.html">Cerrar sesión</a>
+    </div>
+
+    <aside>
+        <nav>
+            <ul>
+                <li>
+                    <li><a href="http://127.0.0.1:3000/CargadorInicio.html"><i class="fas fa-home"></i> Inicio</a></li>
+                    <a href="#" class="folder-toggle">
+                        <i class="fas fa-caret-down"></i> 7mo
+                    </a>
+                    <ul class="nested">
+                        <li><a href="#">7mo 3ra</a></li>
+                        <li><a href="#">7mo 2da</a></li>
+                        <li><a href="#">7mo 1ra</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <h2>Carga de notas</h2>
+        <div class="grades-container">
+            <div class="student-info">
+                <p>Millanao, Joaquin</p>
+                <table>
+                    <tr>
+                        <td>Matematica</td>
+                        <td><input type="text" placeholder="Nota"></td>
+                    </tr>
+                    <tr>
+                        <td>Redes</td>
+                        <td><input type="text" placeholder="Nota"></td>
+                    </tr>
+                    <tr>
+                        <td>Hardware IV</td>
+                        <td><input type="text" placeholder="Nota"></td>
+                    </tr>
+                    <tr>
+                        <td>Pract. Profesionalizantes</td>
+                        <td><input type="text" placeholder="Nota"></td>
+                    </tr>
+                    <tr>
+                        <td>Observaciones:</td>
+                        <td><textarea placeholder="Escribe tus observaciones"></textarea></td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- Otros estudiantes -->
+            <div class="student-info">
+                <p>Licantica, Flavo</p>
+            </div>
+            <div class="student-info">
+                <p>Lobo, Marcelo</p>
+            </div>
+            <div class="student-info">
+                <p>Espinoza, Natalia</p>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <a href="#">« Previous</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">...</a>
+            <a href="#">6</a>
+            <a href="#">Next »</a>
+        </div>
+    </main>
+
+    <script src="JS/cargadodenotas.js"></script>
+</body>
+</html>

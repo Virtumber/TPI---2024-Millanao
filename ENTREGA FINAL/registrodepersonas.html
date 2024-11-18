@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Usuarios</title>
+    <link rel="stylesheet" href="CSS/registrodepersonas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="IMGS/pngCG.png" alt="Logo" class="logo-img">
+                <h2>Gestión de Usuarios</h2>
+            </div>
+            <div class="user-info">
+                <span>Barrera, Hugo</span>
+            </div>
+            <div class="icons-container">
+                <i class="fas fa-bell" id="bell-icon"></i>
+                <i class="fas fa-user" id="user-icon"></i>
+            </div>
+        </div>
+    </header>
+
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:3000/AdministradorInicio.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="http://127.0.0.1:3000/registrodepersonas.html"><i class="fas fa-users"></i> Gestión de Usuarios</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <h2>Usuarios</h2>
+        <div class="table-container">
+            <table id="usuarios-table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Rol</th>
+                        <th>Curso</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="usuarios-tbody">
+                    <tr>
+                        <td>Millanao, Joaquin</td>
+                        <td>
+                            <select>
+                                <option>Admin</option>
+                                <option>Alumno</option>
+                                <option>Cargador</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="text" value="7mo 1ra">
+                        </td>
+                        <td>
+                            <button class="save-btn">Guardar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <div class="notification-menu" id="notification-menu" style="display: none;">
+        <div class="notification-item">No tienes nuevas notificaciones.</div>
+    </div>
+
+    <div class="user-menu" id="user-menu" style="display: none;">
+        <a href="http://127.0.0.1:3000/BoletinesDigitales.html">Cerrar sesión</a>
+    </div>
+
+    <script src="JS/registrodepersonas.js"></script>
+</body>
+</html>

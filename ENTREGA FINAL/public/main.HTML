@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio</title>
+    <link rel="stylesheet" href="CSS/1erpag.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+   
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="IMGS/pngCG.png" alt="Logo" class="logo-img">
+                <h1>Inicio</h1>
+            </div>
+            <div class="icons-container">
+                <i class="fas fa-bell" id="bell-icon"></i>
+                <i class="fas fa-user" id="user-icon"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menú de notificaciones -->
+    <div class="notification-menu" id="notification-menu">
+        <div class="notification-item">No tienes nuevas notificaciones.</div>
+    </div>
+
+    <!-- Menú del usuario -->
+    <div class="user-menu" id="user-menu">
+        <a href="http://127.0.0.1:3000/BoletinesDigitales.html">Cerrar sesión</a>
+    </div>
+
+    <main>
+        <div class="grid-container">
+            <!-- Perfil de Usuario -->
+            <div class="card profile-card">
+                <div class="card-header">
+                    <i class="fas fa-user"></i>
+                    <div>
+                        <p>Personal</p>
+                        <h2>Millanao, Joaquin Ignacio</h2>
+                    </div>
+                </div>
+                <p class="user-role">Alumno</p>
+                
+            </div>
+
+            <!-- Curso del Alumno -->
+            <div class="card course-card">
+                <div class="card-header">
+                    <i class="fas fa-book"></i>
+                    <div>
+                        <p>Curso</p>
+                        <h2>7mo 3ra (id: *****)</h2>
+                    </div>
+                </div>
+                <a href="http://127.0.0.1:3000/MisCalificaciones.html">Mis calificaciones</a>
+            </div>
+
+            <!-- Información de la Institución -->
+            <div class="card institution-card">
+                <div class="card-header">
+                    <i class="fas fa-school"></i>
+                    <div>
+                        <p>Institución</p>
+                        <h2>Colegio P. DR. E. Guevara</h2>
+                    </div>
+                </div>
+                <p>Dirección: Rio Calendaria 3460</p>
+                <p>Teléfono: 2964 30-0532</p>
+                <p>Correo: cpdeguevara.sec@tdf.edu.ar</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Archivo JS separado -->
+    <script src="JS/1erpag.js"></script>
+</body>
+</html>

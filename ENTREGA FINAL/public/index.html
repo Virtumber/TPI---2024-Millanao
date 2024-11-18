@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo">
+                <img src="IMGS/pngCG.png" alt="Logo" class="logo-img">
+            </div>
+            <h1>BOLETINES DIGITALES</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="login-container">
+            <div class="login-box">
+                <div class="login-logo">
+                    <img src="IMGS/pngCG.png" alt="Logo" class="login-logo-img">
+                </div>
+                <h2>INICIAR SESIÓN</h2>
+                <form id="loginForm">
+                    <div class="input-group">
+                        <label for="username">Nombre de usuario</label>
+                        <input type="text" id="username" name="username">
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <button type="submit" class="submit">Siguiente</button>
+                </form>
+                <p><a href="recuperar_cuenta.html" class="forgot-link">¿Ha olvidado su nombre de usuario o contraseña?</a></p>
+            </div>
+            <p>¿Necesita una cuenta nueva?</p>
+
+            <a href="crear_cuenta.html" class="button-link">
+                <button class="submit">Crear una nueva cuenta</button>
+            </a>
+
+        </div>
+    </main>
+
+    <script src="JS/index.js"></script>
+</body>
+</html>

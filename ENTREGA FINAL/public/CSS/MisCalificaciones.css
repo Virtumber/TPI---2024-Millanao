@@ -1,0 +1,171 @@
+/* General Styles */
+.notification-menu, .user-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 10px;
+    z-index: 100;
+}
+
+.notification-menu {
+    top: 60px; /* Ajustado para estar justo debajo del header */
+    right: 50px;
+    width: 250px;
+}
+
+.user-menu {
+    top: 60px; /* Ajustado para estar justo debajo del header */
+    right: 20px;
+    width: 150px;
+}
+
+.notification-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.notification-item:last-child {
+    border-bottom: none;
+}
+
+.notification-item:hover, .user-menu a:hover {
+    background-color: #f1f1f1;
+}
+
+.user-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    padding: 01px 20px;
+    position: fixed;
+    top: 0;
+    width: 99%;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.user-info {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.icons-container i {
+    font-size: 24px;
+    margin-left: 15px;
+    color: #333;
+}
+
+/* Sidebar Styles */
+aside {
+    width: 220px;
+    background-color: #ddd;
+    position: fixed;
+    top: 70px; /* Ajuste para colocarlo debajo del header */
+    bottom: 0;
+    left: 0;
+    padding-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 15px;
+    text-align: left;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #bbb;
+}
+
+/* Main Content */
+main {
+    margin-left: 240px;
+    padding: 90px 20px 20px; /* Se ajusta el padding superior para dar espacio al header */
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Grades Container */
+.grades-container {
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.student-info {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.student-info p {
+    margin: 0;
+    font-size: 18px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+table th {
+    background-color: #ddd;
+}
+
+table td {
+    font-size: 16px;
+}

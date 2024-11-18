@@ -1,0 +1,143 @@
+/* General Styles */
+     .notification-menu, .user-menu {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        padding: 10px;
+        z-index: 100;
+    }
+
+    .notification-menu {
+        top: 50px;
+        right: 50px;
+        width: 250px;
+    }
+
+    .user-menu {
+        top: 50px;
+        right: 20px;
+        width: 150px;
+    }
+
+    .notification-item {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .notification-item:last-child {
+        border-bottom: none;
+    }
+
+    .notification-item:hover, .user-menu a:hover {
+        background-color: #f1f1f1;
+    }
+
+    .user-menu a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+    }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    padding: 01px 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.icons-container i {
+    font-size: 24px;
+    margin-left: 15px;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Card Styles */
+.card {
+    background-color: #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card-header i {
+    font-size: 32px;
+    margin-right: 10px;
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.card-header p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.user-role {
+    font-style: italic;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.course-card {
+    background-color: #eee;
+}
+
+.institution-card {
+    background-color: #ccc;
+}
